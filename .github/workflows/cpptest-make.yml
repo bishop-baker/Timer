@@ -20,6 +20,10 @@ jobs:
     # Specifies the type of runner that the job will run on.
     runs-on: self-hosted
 
+    # Set environment variables
+    run: "set PATH=C:\mingw\mingw64\bin;C:\parasoft_cpptest_standard-2024.1.0-win32.x86_64\cpptest;C:\parasoft_cpptest_standard-2024.1.0-win32.x86_64\cpptest\bin;%PATH%"
+      shell: cmd
+
     # Specifies required permissions for upload-sarif action
     permissions:
       # required for all workflows
